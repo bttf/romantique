@@ -1,4 +1,4 @@
-![](http://www.blocksandgold.com/media/catalog/product/cache/3/image/265x/9df78eab33525d08d6e5fb8d27136e95/r/o/rose_icon32.png)
+![](romantique.png)
 # Romantique
 
 A (useless) node module to convert Roman to Decimal numerals. NPM isn't full enough of useless, right? If you ever use this in production, please, let me know.
@@ -66,10 +66,10 @@ You can also have these amazing features in your terminal:
 Then run:
 
   	romantique --roman MMII
-  	// => 2002
+  	// => MMII => 2002
   	
   	romantique -r MMII
-  	// => 2002
+  	// => MMII => 2002
   	
   	romantique --roman FDSFEEER
   	// FDSFEEER is not a valid roman numeral.
