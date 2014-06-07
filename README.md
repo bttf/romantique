@@ -43,7 +43,7 @@ romantique.roman.toDecimal('FDSFEEER');
 // => FDSFEEER is not a valid roman numeral. 
 ```
 
-### Decimal Numerals
+### Arabic Numerals
 
 To validate:
 
@@ -52,22 +52,22 @@ romantique.arabic.validate('1955');
 // => true 
 romantique.arabic.validate(1985);
 // => true
-romantique.arabic.validate('this is heavy');
+romantique.arabic.validate('lizard');
 // => false 
 ```
 
-To Decimal:
+To Roman:
 
 ```javascript
 romantique.arabic.toRoman('88');
 // => LXXXVIII
 ```
 
-If it's not a Roman Numeral:
+If it's not an Arabic Numeral:
 
 ```javascript
-romantique.roman.toDecimal('say hi to your mom for me');
-// => say hi to your mom for me is not a valid arabic numeral.
+romantique.arabic.toRoman('the beach');
+// => the beach is not a valid arabic numeral.
 ```
 
 ## Command Line
