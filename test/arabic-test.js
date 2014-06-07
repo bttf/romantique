@@ -9,14 +9,18 @@ var chai = require('chai')
       4,            // IV 
       99            // XCIX
     ]
+    , invalids = [
+      'not a number',
+      419.9
+    ]
 
 describe('Arabic Validator', function() {
 
   it('should return a boolean', function() {
     expect(arabic.validate(valids[0])).to.be.a('boolean')
     expect(arabic.validate(valids[1])).to.be.a('boolean')
-    expect(arabic.validate('not a number')).to.be.a('boolean')
-    expect(arabic.validate(419.9)).to.be.a('boolean')
+    expect(arabic.validate(invalids[0])).to.be.a('boolean')
+    expect(arabic.validate(invalids[1])).to.be.a('boolean')
   });
 
   it('should return true for valid values', function() {
@@ -25,8 +29,8 @@ describe('Arabic Validator', function() {
   });
 
   it('should return false for invalid values', function() {
-    expect(arabic.validate('not a number')).to.be.false;
-    expect(arabic.validate(419.9)).to.be.false;
+    expect(arabic.validate(invalids[0])).to.be.false;
+    expect(arabic.validate(invalids[1])).to.be.false;
   });
 
 });

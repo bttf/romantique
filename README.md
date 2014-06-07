@@ -1,7 +1,7 @@
 ![](romantique.png)
 # Romantique
 
-A (useless) node module to convert Roman to Decimal numerals. NPM isn't full enough of useless, right? If you ever use this in production, please, let me know.
+A (useless) node module to convert Roman to Arabic numerals. NPM isn't full enough of useless, right? If you ever use this in production, please, let me know.
 
 From 0 to 3999.
 
@@ -47,15 +47,28 @@ romantique.roman.toDecimal('FDSFEEER');
 
 To validate:
 
-*TODO*
+```javascript
+romantique.arabic.validate('1955');
+// => true 
+romantique.arabic.validate(1985);
+// => true
+romantique.arabic.validate('this is heavy');
+// => false 
+```
 
-To Roman:
+To Decimal:
 
-*TODO*
+```javascript
+romantique.arabic.toRoman('88');
+// => LXXXVIII
+```
 
-If it's not a Decimal Numeral:
+If it's not a Roman Numeral:
 
-*TODO*
+```javascript
+romantique.roman.toDecimal('say hi to your mom for me');
+// => say hi to your mom for me is not a valid arabic numeral.
+```
 
 ## Command Line
 
